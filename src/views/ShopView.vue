@@ -1,8 +1,10 @@
 <script setup>
 
+import MainNav from "@/components/MainNav.vue";
 </script>
-
 <template>
-  <h1 class="font-bold text-blue-600 text-3xl">Shop View</h1>
+  <div>
+    <MainNav/>
+  </div>
 </template>
 
