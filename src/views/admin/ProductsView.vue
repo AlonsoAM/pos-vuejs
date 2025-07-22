@@ -3,6 +3,6 @@
 </script>
 
 <template>
-  <h1>Desde Admin</h1>
+  <h1>Desde Productos</h1>
 </template>
 
