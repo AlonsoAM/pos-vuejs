@@ -34,7 +34,12 @@ const baseClasses = {
 
 const fileClasses = {
   ...baseClasses,
-  input: 'w-full px-6 py-8 text-gray-600 bg-gradient-to-br from-gray-50 to-gray-100 border-3 border-dashed border-gray-300 rounded-xl cursor-pointer transition-all duration-300 hover:border-emerald-400 hover:bg-gradient-to-br hover:from-emerald-50 hover:to-teal-50 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 text-center'
+  input: 'w-full px-8 py-12 text-blue-700 bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-dashed border-blue-300 rounded-2xl cursor-pointer transition-all duration-300 hover:border-emerald-400 hover:bg-gradient-to-br hover:from-emerald-50 hover:to-teal-50 focus:outline-none focus:ring-4 focus:ring-emerald-500/20 focus:border-emerald-500 text-center font-semibold',
+  fileList: 'hidden',
+  noFiles: 'flex flex-col items-center justify-center space-y-4 py-4',
+  fileItem: 'hidden',
+  fileName: 'hidden',
+  fileRemove: 'hidden'
 };
 
 const selectClasses = {
@@ -78,6 +83,7 @@ const selectClasses = {
               accept=".jpg, .jpeg, .png"
               help="📸 Formatos: JPG, JPEG, PNG • Máximo: 2MB • Resolución recomendada: 800x600px"
               :classes="fileClasses"
+              placeholder="Selecciona una imagen del producto"
           />
 
           <FormKit
