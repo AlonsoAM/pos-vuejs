@@ -46,6 +46,30 @@ import Link from "@/components/Link.vue";
               "
               :options="['Carnes', 'Lácteos', 'Bebidas', 'Higiene Personal']"
           />
+          <FormKit
+              type="number"
+              label="Precio"
+              name="price"
+              placeholder="Precio del Producto"
+              validation="required"
+              :validation-messages="{
+                required: 'EL precio es obligatorio'
+                }
+              "
+              min="1"
+          />
+          <FormKit
+              type="number"
+              label="Disponibles"
+              name="avilability"
+              placeholder="Cantidad disponible"
+              validation="required"
+              :validation-messages="{
+                required: 'La cantidad es obligatoria'
+                }
+              "
+              min="1"
+          />
         </FormKit>
       </div>
     </div>
